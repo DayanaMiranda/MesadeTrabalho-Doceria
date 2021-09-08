@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Doceria DH </title>
+</head>
+
+<body>
+    <main>
+
+        <section>
+            <img src="./img/pngegg.png" alt="Logo livros">
+            <h2>Doceria DH</h2>
+        </section>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Dados pessoais:</legend>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required placeholder="Insira seu e-mail">
+
+                <label for="nome">Nome</label>
+                <input type="nome" name="nome" id="nome" required placeholder="Insira seu nome">
+
+                <label for="livros">Endereço</label>
+                <textarea name="endereco" id="endereco" cols="20" rows="3" placeholder="Digite seu endereço"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha seu doce:</legend>
+                <select name="doces" id="doces">
+                    <fieldset>
+                        <legend> Doces </legend>
+                        <optgroup label="Doces">
+                            <option value="">Brigadeiro</option>
+                            <option value="">Beijinho</option>
+                            <option value="">Cajuzinho</option>
+                            <option value="">Olho de sogra</option>
+                            <option value="">Bombom</option>
+                        </optgroup>
+
+                        <optgroup label="Bebidas">
+                            <option value="">Chocolate quente</option>
+                            <option value="">Café</option>
+                            <option value="">Cappucino</option>
+                        </optgroup>
+                </select>
+
+                <fieldset>
+                    <legend> Método de pagamento:</legend>
+                    <div class="metodoPagamento">
+                        <input type="radio" name="pagamento" id="dinheiro">
+                        <label for="dinheiro">Dinheiro</label>
+                        <input type="radio" name="pagamento" id="cartao">
+                        <label for="cartao">Cartão</label>
+                        <input type="radio" name="pagamento" id="pix">
+                        <label for="pix">Pix</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Data da entrega:</legend>
+                    <input type="datetime-local" name="data" id="data">
+                </fieldset>
+
+                <fieldset>
+                    <legend> Opcionais</legend>
+                    <div class="opcionais">
+                        <input type="checkbox" name="acucar" id="acucar">
+                        <label for="cobertura">Açúcar</label>
+
+
+                        <input type="checkbox" name="talheres" id="talheres">
+                        <label for="cobertura">Talheres</label>
+                        <input type="checkbox" name="embalagem" id="embalagem">
+                        <label for="cobertura">Embalagem de presente </label>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+        </form>
+        <p>Confeiteiros:</p>
+        <p>Dayana Miranda, Weverton Gois, Wallex de França, Marcos Rezende, João Rocha, Ricardo Ramalho</p>
+    </main>
+</body>
+
+</html>
